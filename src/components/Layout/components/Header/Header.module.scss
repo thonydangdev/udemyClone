@@ -1,0 +1,86 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: var(--header-height);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.inner {
+    padding: 0 var(--default-padding-horizontal);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 24px;
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    width: 91px;
+    height: 34px;
+    object-fit: cover;
+}
+.search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 46px;
+    border-radius: 100rem;
+    border: 1px solid #333;
+
+    & input {
+        flex: 1;
+        height: 100%;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        color: var(--text-color);
+        padding: 0 20px;
+    }
+    & input:not(:placeholder-shown) ~ .btn-search {
+        color: #4c4e57;
+    }
+}
+.btn-search {
+    padding: 0 20px;
+    height: 100%;
+    font-size: 1.6rem;
+    color: rgba(22, 24, 26, 0.4);
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+        cursor: pointer;
+    }
+}
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    & > button:hover,
+    & > .actions-item:hover {
+        color: var(--primary-color);
+    }
+}
+.courses-learning {
+    width: 100%;
+    margin-top: -10px;
+}
+.courses-learningcart {
+    width: 100%;
+    margin-top: -10px;
+    padding: 16px 16px 0 16px;
+}
+.popup-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 10px;
+    & a {
+        color: var(--primary-color);
+        font-size: 1.3rem;
+    }
+}

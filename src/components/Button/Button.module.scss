@@ -1,0 +1,40 @@
+.wrapper {
+    height: 48px;
+    width: 100%;
+    font-size: 1.6rem;
+    min-width: 100px;
+    font-weight: 700;
+    padding: 0 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+}
+.text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    min-width: 140px;
+}
+.basic {
+    background-color: #1c1d1f;
+    color: #fff;
+    &:hover {
+        background-color: #000;
+    }
+}
+.cssIcon {
+    padding: 10px;
+    min-width: 30px;
+}
+.primaryHover {
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+.outline {
+    border-color: #1c1d1f;
+    background-color: #fff;
+    &:hover {
+        background-color: #ddd;
+    }
+}

@@ -1,0 +1,16 @@
+.wrapper {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height: 8px;
+    border-radius: 100rem;
+    background-color: #d1d7dc;
+}
+.wrapper::after {
+    content: '';
+    position: absolute;
+    background-color: #5624d0;
+    width: var(--progress-success);
+    height: 100%;
+    border-radius: inherit;
+}

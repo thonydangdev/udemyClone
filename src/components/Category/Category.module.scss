@@ -1,0 +1,31 @@
+.wrapper {
+    position: relative;
+}
+.box {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border: 1px solid #cecece;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    margin-top: 17px;
+}
+.cate-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 26rem;
+    padding: 1rem;
+    & + .cate-box {
+        border-left: 1px solid #cecece;
+    }
+    & .cate-item {
+        &:hover {
+            color: var(--primary-color);
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        text-align: left;
+    }
+}
